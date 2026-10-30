@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Monsieur+La+Doulaise&display=swap');
+
+
+/* .cormorant-<uniquifier> {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* .monsieur-la-doulaise-regular {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* Définissons Les variables */
+ :root{
+    --or: gold;
+    --marron-principal: #6b3f2a;
+    --beige-fong: #f5f0E8;
+    --noir-text: #121212;
+    --vert-whatsapp: #25d366;
+    --bleu-marine: #1d2b44;
+    --gris: rgba(188, 183, 183, 0.562);
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Initalisation de la page entière*/
+body{
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+    background-color: #fff;
+}
+
+header{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--noir-text);
+    width: 100%;
+    position: fixed;
+    gap: 20%;
+}
+header strong{
+    font-size: 1.5rem;
+    color: var(--or)
+}
+header em{
+    color: var(--beige-fong);
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--gris);
+    gap: 5vw;
+    border-radius: 8px;
+}
+.menu ul li{
+    list-style: none;
+    font-size: 18px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #121212;
+}
+.menu ul li .btn2 {
+    font-size: 1rem;
+    background-color: var(--vert-whatsapp);
+    border-radius: 8px;
+    /* color: white; */
+    padding: 0.1rem;
+}
+.menu ul li .btn2 a{
+    color: white;
+}
+
+.menu ul li .btn{
+    background-color: var(--beige-fong);
+    padding: 0.1rem;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: black;
+}
+/* Responsive "header" pour tablette*/
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 2vw;
+    }
+    .menu ul li .btn2:hover{
+        background-color: #18813f;
+        cursor: pointer;
+    }
+}
+/* Responsive "header" pour ordinateur*/
+@media screen and (min-width: 1024px){
+    .menu ul li .btn{
+        transition: all 0.5s ease;
+    }
+    .menu ul li .btn:hover{
+        transform: scale(1.2);
+    }
+    .menu ul li .btn2{
+    transition: all 0.5s ease;
+}
+    .menu ul li .btn2:hover{
+    transform: scale(1.2);
+}
+}
+
+/* "Hiro" pour smartphone */
+.hiro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.accroche{
+    padding-top: 4rem;
+    width: 100%;
+    text-align: center;
+}
+.accroche h4{
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 3.5rem;
+    color: goldenrod;
+    line-height: 2.5rem;
+}
+.accroche h1{
+    font-family: "Cormorant", serif;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    font-weight: bold;
+    color: #121212;
+}
+.accroche h3{
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: var(--marron-principal);
+}
+.accroche a{
+    font-family: monospace;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+    margin: 1rem auto;
+    background-color: var(--vert-whatsapp);
+    border-radius: 8px;
+    border: solid green;
+    filter: brightness(10px);
+    cursor: pointer;
+    color: #121212;
+    text-decoration: none;
+}
+.imagedaccroche{
+    width: 95%;
+    height: 100%;
+}
+.imagedaccroche img{
+    object-fit: cover;
+    border-radius: 10px;
+    height: auto;
+    max-height: 72vh;
+    width: 100%;
+}
+/* Responsive de "hiro" pour tablette*/
+@media screen and (min-width: 768px){
+    .hiro{
+        height: 76vh;
+        align-items: start;
+        padding-top: 1.5rem;
+        border-bottom: var(--or) solid;
+    }
+    .accroche{
+        width: 50%;
+        height: 100%;
+        padding-top: 2rem;
+    }
+    .accroche h1{
+        font-size: 2rem;
+    }
+    .accroche h4{
+        font-size: 2rem;
+    }
+    
+    .imagedaccroche{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+/* Responsive de "hiro" pour ordinateur*/
+@media screen and (min-width: 1024px){
+    .hiro{
+        height: 76vh;
+        background-color: var(--beige-fong);
+        border-radius: 20px;
+    }
+    .accroche{
+        width: 50%;
+    }
+    .accroche h4{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .accroche h1{
+        font-size: 3rem;
+    }
+    .accroche button{
+        border: none;
+        transition: all 0.5s ease;
+    }
+    .accroche button:hover{
+        transform: scale(1.2);
+    }
+    .imagedaccroche{
+        width: 50%;
+    }
+}
+
+.pourquoi{
+    margin: 4rem auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: #fff;
+    /* background-image: url(images/NOUVEAU.jpg);
+    background-repeat: repeat;
+    background-size: 5rem; */
+}
+.titre{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem auto;
+}
+.pourquoi p{
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+.pourquoi ol{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.pourquoi ol li{
+    font-size: 18px;
+    width: 95%;
+    background-color: var(--beige-fong);
+    border: var(--marron-principal) solid;
+    border-radius: 10px;
+}
+.pourquoi ol li h3{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Responsive "pourquoi" pour ordinateur */
+@media screen and (min-width: 1024px){
+    .pourquoi ol{
+        flex-direction: row;
+        flex-wrap: wrap; /*L'objet revient à la ligne lorsqu'il est en fin de page*/
+    }
+    .pourquoi ol li{
+        width: 40%;
+        height: auto;
+    }
+}
+
+/* collection d'image pour smartphone */
+.collections{
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.catalogue{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.collect{
+    width: 95%;
+    height: 80vh;
+    background-color: var(--beige-fong);
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+.collect img{
+    object-fit: cover;
+    margin-top: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 95%;
+    border-radius: 10px;
+}
+.collect h4{
+    font-size: 1.5rem;
+}
+
+/* responsive de collection d'image pour tablette */
+@media screen and (min-width: 768px){
+    .collect{
+        width: auto;
+        max-width: 30%;
+        height: auto;
+        max-height: 50vh;
+    }
+}
+
+/* Responsive de collection d'image pour ordinateur */
+@media screen and (min-width: 1024px){
+    .collect{
+        max-height: 60vh;
+    }
+}
+
+/* Pied de page pour smartphone */
+footer{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20vw;
+    background-color: var(--noir-text);
+    color: #fff;
+}
+footer ul{
+    line-height: 4vh;
+}
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+    footer ul li a i{
+    font-size: 1.7rem;
+}
+/* Responsive pied de page pour ordinateur */
+@media screen and(min-width: 1024px) {
+    footer ul li a i{
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+    footer ul li a i:hover{
+    transform: scale(1.2);
+}   
+}
