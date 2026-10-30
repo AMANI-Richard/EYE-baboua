@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sitebottier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h3><strong class="logo">EYE baboua</strong><em> - Abidjan</em></h3>
+        <nav class="menu">
+            <ul>
+                <li><button class="btn"><a href="siteBotiier.html">Acceuil</a></li></button>
+                <li><button class="btn"><a href="collectionsitebottier.html">collections</a></li></button>
+                <li><button class="btn"><a href="journalsitebottier.html">Journal</a></li></button>
+                <li><button class="btn2"><a target="_blank" href="https://wa.me/2250748968053?text=Bonjour%20je%20viens%20de%20votre%20site%20web">Whatsapp</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hiro">
+            <div class="accroche">
+                <h4>L'élégence et le sur-mesure</h4><br>
+                <h1>Confection de chaussures & reparation</h1><br>
+                <p><span>depuis 2015</span></p><br>
+                <h3>cordonnerie morderne - Abidjan, confiez vos pieds et vos plus beaux souliers à un maître artisant.</h3>
+                <br><br>
+                <button><a target="_blank" href="https://wa.me/2250748968053?text=Bonjour%20je%20viens%20de%20votre%20site%20web">contactez-nous</a></button>
+                <br><br>
+            </div>
+            <div class="imagedaccroche">
+                <img src="images/1789120444080.jpg" alt="iamge 1" loading="lazy">
+            </div>
+        </section>
+        <section class="pourquoi">
+            <h2 class="titre">Optez pour des chaussures unique</h2>
+            <p>Nous vous offons la liberté de puiser dans notre collection pour composer le model de vos rêves, celui qui reflete le mieux votre personnalité</p>
+            <ol>
+                <li>
+                    <h3>Choisissez votre soulier</h3>
+                    <p>Mocassin; Ruchelieu; Derby; boot...<br> Vous trouverez forcement dans notre 
+                    collection de soulier sur mesure, le model qui correspond à votre style.</p>
+                </li>
+                <li>
+                    <h3>Selectionnez votre forme</h3>
+                    <p>Bout rond; éfilé; carré ect,<br>notre parc de forme propose
+                    la plupart des tendances actuelles, vous permettant ainsi de rester original et d'actualité.</p>
+                </li>
+                <li>
+                    <h3>Personnalisez à volonté</h3>
+                    <p>Gâce à une diversité de matériaux (cuir; daim, semelle, lacet...) de différent type et de différentes couleur,<br>
+                    vous avez la possibilité de faire produire la chaussure qui repond le mieux a vos aspirations.</p>
+                </li>
+                <li>
+                    <h3>Complétez votre look</h3>
+                    <p>Ceinture; sac...<br>
+                    Une pluralité d'accessoirs assorties à vos chaussures pour parfaire votre tenue.</p>
+                </li>
+            </ol>
+        </section>
+        <section class="collections" id="collections">
+            <h2 class="titre">Découvrez nos collections</h2>
+            <div class="catalogue">
+                <div class="collect">
+                    <img src="images/1789120492984.jpg" alt="" loading="lazy">
+                    <h4>Moccassin alden</h4>
+                    <p>Avec ses deux pompos, elle vous donne un style original</p>
+                </div>
+                <div class="collect">
+                    <img src="images/1789120419261.jpg" alt="" loading="lazy">
+                    <h4>Moccassin box</h4>
+                    <p>Elle alie à la foi class et modernisme</p>
+                </div>
+                <div class="collect">
+                    <img src="images/1789120586666.jpg" alt="" loading="lazy">
+                    <h4>Berlutti</h4>
+                    <p>Elle est adaptée à différents styles vestimentaire</p>
+                </div>
+            </div>
+            <a href="collectionsitebottier.html">Voir plus d'image -></a>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><i class="fa-solid fa-phone"></i>Téléphone: +225 0748968053</li>
+            <li><a target="_blank" href="https://wa.me/2250748968053?text=Bonjour%20je%20viens%20de%20votre%20site%20web"><i class="fa-brands fa-whatsapp"></i> Whatsapp: +225 0748968053</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100086454801097"><i class="fa-brands fa-facebook-f"></i> Facebook: EYE baboua</a></li>
+            <li><a href="https://www.facebook.com/messages/t/108280555399355"><i class="fa-brands fa-facebook-messenger"></i> Facebook-Messenger: EYE baboua</a></li>
+            <li><a href=""><i class="fa-brands fa-tiktok"></i> Tik tok: EYE baboua</a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i> InstaGram: EYE baboua</a></li>
+            <li><i class="fa-solid fa-clock"></i> Horaire d'ouverture : Du lundi au samedi, de 08H à 16H</li>
+            <li><a href=""><i class="fa-solid fa-map-pin"></i></a> Retrouvez nous à Yopougon Niangon près de l'église catholique Saint Mathieu<br></li>
+        </ul>
+    </footer>
+</body>
+</html>
